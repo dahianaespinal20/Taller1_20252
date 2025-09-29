@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+<h1 class="mb-4">Movie Statistics</h1>
+<div class="card shadow-sm">
+<div class="card-body">
+<p class="card-text">
+       Gráfica con el número de películas por <strong>año</strong> y por <strong>género</strong>.
+</p>
+<img class="img-fluid border rounded"
+          src="data:image/png;base64,{{ graphic }}"
+          alt="Movies statistics chart">
+</div>
+</div>
+</div>
+{% endblock %}
